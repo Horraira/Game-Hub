@@ -16,8 +16,9 @@ const useGenres = () => useQuery({
     staleTime: 1000 * 60 * 5,
     initialData: {
         count: genres.length,
+        next: null,
         results: genres
-    },
+    }
 })
 
 
